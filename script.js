@@ -17,5 +17,5 @@ const display = document.getElementById("daily-special");
 
 button.addEventListener("click", () => {
     const randomItem = menuItems[Math.floor(Math.random() * menuItems.length)];
-    display.textContent = `Today's Special: ${randomItem}`;
+    display.textContent = `⭐ Today's Special: ${randomItem} ⭐`;
 });
