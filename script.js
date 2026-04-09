@@ -32,6 +32,6 @@ toggleBtn.addEventListener("click", () => {
 
   cafeImage.src = isNight
     ? "Charming café at night.png"
-    : "images/cafe-day.png";
+    : "Charming café on a sunny morning.png";
 });
 });
