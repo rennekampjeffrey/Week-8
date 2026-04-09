@@ -16,7 +16,7 @@ specialButton.addEventListener("click", () => {
   const randomItem = menuItems[Math.floor(Math.random() * menuItems.length)];
   display.textContent = `Today's Special: ${randomItem}`;
 });
-
+const cafeImage = document.getElementById("cafe-image");
 // Day/Night Mode button
 const toggleBtn = document.getElementById("toggle-mode");
 const body = document.body;
