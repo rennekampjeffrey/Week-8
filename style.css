@@ -1,74 +1,74 @@
-/* =====================================================
-   Midnight Brew Café Theme
-===================================================== */
-
+/* Base page styles (Day Mode) */
 body {
-  background-color: #2e2e2e;
-  color: #f4f4f4;
-  text-align: center;
+  background-color: #fdf6e3;
+  color: #3e2723;
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 40px 0;
+  text-align: center;
+  padding: 30px;
+  transition: background-color 0.5s, color 0.5s;
 }
 
-/* Heading */
-h1 {
-  font-size: 40px;
-  margin-bottom: 10px;
-  color: #ffcc70;
+/* Night Mode */
+.night-mode {
+  background-color: #1c1c1c;
+  color: #f4f4f4;
 }
 
-p {
-  margin-bottom: 20px;
-  font-style: italic;
-}
-
-/* Menu List */
-#menu-list {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 30px;
-}
-
-/* Menu Items */
-#menu-list li {
-  background: #444;
-  padding: 15px;
-  margin: 12px auto;
-  border-radius: 10px;
-  width: 60%;
-  font-size: 18px;
-  transition: all 0.3s ease;
-}
-
-/* Hover Effect */
-#menu-list li:hover {
-  background: #ffcc70;
-  color: #2e2e2e;
-  transform: scale(1.05);
-}
-
-/* Daily Special Button */
-#show-special {
+/* Toggle button */
+#toggle-mode {
   padding: 10px 20px;
-  background: #ffe600;
+  background-color: #6f4e37;
+  color: white;
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  margin-bottom: 20px;
   font-size: 16px;
-  font-weight: bold;
-  transition: all 0.3s ease;
+}
+
+#toggle-mode:hover {
+  background-color: #5a3d2b;
+}
+
+/* Menu list styling */
+#menu-list {
+  list-style: none;
+  padding: 0;
+}
+
+#menu-list li {
+  background: #d7ccc8;
+  padding: 12px;
+  margin: 8px auto;
+  border-radius: 6px;
+  width: 60%;
+  max-width: 400px;
+}
+
+/* Menu items in Night Mode */
+.night-mode #menu-list li {
+  background: #333;
+  color: #f4f4f4;
+}
+
+/* Daily Special button */
+#show-special {
+  padding: 10px 20px;
+  background: #ffe082;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 16px;
 }
 
 #show-special:hover {
-  background: #ffcc70;
-  transform: scale(1.05);
+  background: #ffd54f;
 }
 
-/* Daily Special Message */
+/* Daily special text */
 #daily-special {
   margin-top: 15px;
   font-style: italic;
-  font-size: 20px;
-  color: #ffe600;
+  font-size: 18px;
 }
