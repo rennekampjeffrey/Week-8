@@ -1,4 +1,4 @@
-/* Base page styles (Day Mode) */
+/* General Styling */
 body {
   background-color: #fdf6e3;
   color: #3e2723;
@@ -14,23 +14,21 @@ body {
   color: #f4f4f4;
 }
 
-/* Toggle button */
-#toggle-mode {
-  padding: 10px 20px;
-  background-color: #6f4e37;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  margin-bottom: 20px;
-  font-size: 16px;
+/* Header */
+h1 {
+  margin-bottom: 10px;
 }
 
-#toggle-mode:hover {
-  background-color: #5a3d2b;
+/* Image */
+#cafe-image {
+  width: 400px;
+  max-width: 90%;
+  margin: 20px 0;
+  border-radius: 10px;
+  transition: opacity 0.5s ease;
 }
 
-/* Menu list styling */
+/* Menu */
 #menu-list {
   list-style: none;
   padding: 0;
@@ -45,30 +43,79 @@ body {
   max-width: 400px;
 }
 
-/* Menu items in Night Mode */
 .night-mode #menu-list li {
   background: #333;
-  color: #f4f4f4;
 }
 
-/* Daily Special button */
-#show-special {
+/* Buttons */
+#toggle-mode, #show-special {
   padding: 10px 20px;
-  background: #ffe082;
+  margin: 10px;
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  margin-top: 20px;
-  font-size: 16px;
+}
+
+#toggle-mode {
+  background-color: #6f4e37;
+  color: white;
+}
+
+#toggle-mode:hover {
+  background-color: #5a3d2b;
+}
+
+#show-special {
+  background: #ffe082;
 }
 
 #show-special:hover {
   background: #ffd54f;
 }
 
-/* Daily special text */
+/* Daily Special */
 #daily-special {
-  margin-top: 15px;
+  margin-top: 10px;
   font-style: italic;
   font-size: 18px;
+}
+
+/* FAQ Section */
+.faq-item {
+  margin: 15px auto;
+  width: 60%;
+  max-width: 500px;
+  text-align: left;
+}
+
+.faq-question {
+  width: 100%;
+  padding: 12px;
+  background-color: #6f4e37;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  border-radius: 6px;
+}
+
+.faq-question:hover {
+  background-color: #5a3d2b;
+}
+
+.faq-answer {
+  display: none;
+  padding: 10px;
+  background-color: #f4e1d2;
+  border-radius: 6px;
+  margin-top: 5px;
+}
+
+.faq-answer.show {
+  display: block;
+}
+
+.night-mode .faq-answer {
+  background-color: #333;
+  color: #f4f4f4;
 }
