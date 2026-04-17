@@ -1,0 +1,36 @@
+diff --git a/images/cafe-day.svg b/images/cafe-day.svg
+new file mode 100644
+index 0000000000000000000000000000000000000000..b3d01ac5278e8d923e15ccd8b449ec9136031c7c
+--- /dev/null
++++ b/images/cafe-day.svg
+@@ -0,0 +1,30 @@
++<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-label="Cozy cafe daytime illustration">
++  <defs>
++    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
++      <stop offset="0%" stop-color="#b3e5fc"/>
++      <stop offset="100%" stop-color="#e1f5fe"/>
++    </linearGradient>
++    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
++      <stop offset="0%" stop-color="#d7ccc8"/>
++      <stop offset="100%" stop-color="#bcaaa4"/>
++    </linearGradient>
++  </defs>
++
++  <rect width="1000" height="360" fill="url(#sky)"/>
++  <circle cx="120" cy="100" r="50" fill="#ffeb3b"/>
++  <rect y="360" width="1000" height="240" fill="#8bc34a"/>
++
++  <rect x="190" y="170" width="620" height="300" rx="12" fill="url(#wall)"/>
++  <rect x="170" y="145" width="660" height="40" rx="8" fill="#6f4e37"/>
++  <text x="500" y="172" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" fill="#fff3e0">☕ Cozy Corner Café</text>
++
++  <rect x="260" y="230" width="140" height="120" fill="#fff8e1" stroke="#8d6e63" stroke-width="8"/>
++  <rect x="430" y="230" width="140" height="120" fill="#fff8e1" stroke="#8d6e63" stroke-width="8"/>
++  <rect x="600" y="230" width="140" height="120" fill="#fff8e1" stroke="#8d6e63" stroke-width="8"/>
++
++  <rect x="455" y="380" width="90" height="90" fill="#5d4037"/>
++  <circle cx="500" cy="425" r="10" fill="#d7ccc8"/>
++
++  <ellipse cx="310" cy="490" rx="50" ry="18" fill="#6d4c41"/>
++  <ellipse cx="690" cy="490" rx="50" ry="18" fill="#6d4c41"/>
++</svg>
